@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book an Appointment</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<header>
+    <nav>
+        <a href="index.html">
+            <img src="images/logo.png" alt="DogsHaven logo" />
+        </a>
+        <div class="nav-menu">
+            <div>
+                <a href="login.html"><button id="login-button">Login / Register</button></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a style="cursor: default">About ▼</a>
+                    <ul>
+                        <li><a href="company.html">Company</a></li>
+                        <li><a href="trainer.html">Trainers</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <a href="booking.html" style="background-color: #949BDBFF">Booking</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <h2 style="font-size: 50px; margin-bottom: 20px">Foster Booking</h2>
+    <h3 style="font-size: 36px">Find a time: </h3>
+    <div style="display: flex; flex-direction: row; justify-content: space-between; border-bottom: #048056FF 3px solid; padding-bottom: 50px">
+        <img src="images/calender.png" style="cursor: pointer">
+        <div style="display: flex; flex-direction: column; margin-right: 25%; margin-left: 35px">
+            <label for="trainer-names" style="font-size: 20px">Filter by trainer: </label>
+            <select name="trainer-names" id="trainer-names" style="height: 36px">
+                <option style="font-size: 19px"></option>
+                <option value="John Smith" style="font-size: 19px">John Smith</option>
+                <option value="Jane Doe" style="font-size: 19px">Jane Doe</option>
+                <option value="Peter Hahai" style="font-size: 19px">Peter Hahai</option>
+            </select>
+            <br>
+            <label for="dog-type" style="font-size: 20px">Please confirm your dog is an acceptable type: <span style="color: red">*</span></label>
+            <select name="dog-type" id="dog-type" required style="height: 36px">
+                <option></option>
+                <option value="German Shepherd" style="font-size: 19px">German Shepherd</option>
+                <option value="Golden Retriever" style="font-size: 19px">Golden Retriever</option>
+                <option value="Husky" style="font-size: 19px">Husky</option>
+            </select>
+            <br>
+            <label style="font-size: 20px">Insurance ($10): <input type="checkbox" checked style="height: 20px; width: 20px"></label>
+        </div>
+    </div>
+    <h3 style="font-size: 36px">Fill out your details: </h3>
+    <div style="line-height: 5rem; border-bottom: #048056FF 3px solid; padding-bottom: 50px">
+        <label style="height: 120px; font-size: 26px">Name*</label>
+        <input style="margin-right: 70px; height: 40px">
+        <label style="height: 120px; font-size: 26px">Email*</label>
+        <input style="height: 40px">
+        <br><label style="height: 120px; font-size: 26px">Phone</label>
+        <input style="height: 40px">
+        <br><label style="font-size: 26px">Add a message</label>
+        <br><textarea style="width: 50%; height: 15rem; resize: vertical"></textarea>
+    </div>
+    <h3 style="font-size: 36px">Payment - $100 : </h3>
+    <div style="line-height: 5rem">
+        <input type="radio" name="payment-method">
+        <label style="height: 120px; font-size: 26px">In-Store Payment (Login Required)</label><br>
+        <input type="radio" name="payment-method">
+        <label style="height: 120px; font-size: 26px; text-align: center">Credit Card / Debit Card  <img src="images/card-payment.png" height="35"></label><br>
+        <input type="radio" name="payment-method">
+        <label style="height: 120px; font-size: 26px">Apple Pay <img src="images/apple-pay.jpg" height="35"></label><br>
+        <input type="radio" name="payment-method">
+        <label style="height: 120px; font-size: 26px">Google Pay <img src="images/google-pay.png" height="35"></label><br>
+        <input type="radio" name="payment-method">
+        <label style="height: 120px; font-size: 26px">Paypal <img src="images/paypal.png" height="35"></label><br>
+    </div>
+    <a href="order-confirm.html" id="confirm-button" style="background-color: #949BDBFF;display: block;
+	width: 160px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center; color: black; margin-left: 75%">Confirm</a>
+</main>
+<footer>
+    <div>
+        <h2>Opening Hours</h2>
+        <p>Monday - Sunday
+            <br>7:30AM - 6:00PM</p>
+        <div class="social-media-icons">
+            <a href="https://twitter.com/Sydney_Uni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                <img src="images/twitter-logo.png" alt="twitter" />
+            </a>
+            <a href="https://www.instagram.com/sydney_uni/?hl=en" target="_blank">
+                <img src="images/instagram-logo.png" alt="instagram" />
+            </a>
+            <a href="https://www.youtube.com/user/uniofsydney" target="_blank">
+                <img src="images/youtube-logo.png" alt="youtube" />
+            </a>
+            <a href="https://www.facebook.com/sydneyuni/" target="_blank">
+                <img src="images/facebook-logo.png" alt="facebook" />
+            </a>
+        </div>
+        <p>
+            © 2023 by DogsHaven
+        </p>
+    </div>
+    <div class="footer-other">
+        <h2>Address</h2>
+        <p>888 Princes Hwy
+            <br>Camperdown NSW 2006
+            <br>Telephone: (02) 9351 2222
+        </p>
+        <a href="faq.html">FAQ</a>
+        <br>
+        <br>
+        <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <div>
+        <h2>Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.041897614576!2d151.18516071521077!3d-33.8885747806507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1d4ab9ef1d9%3A0x1d017d69037a07c0!2z5oKJ5bC85aSn5a2m!5e0!3m2!1szh-CN!2shk!4v1651070576484!5m2!1sen-US!2shk" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+</body>
+</html>
